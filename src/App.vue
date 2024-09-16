@@ -21,6 +21,17 @@ import { AppState } from './AppState.js'
       </div>
     </header>
 
+    <main class="container-fluid">
+    <section class="row m-3">
+      <div class="col d-flex justify-content-center">
+
+        <button class="buttonMoonImage" style="width:13em;height:13em;"></button>
+
+      </div>
+    </section>
+
+  </main>
+
   </body>
 </template>
 
@@ -42,5 +53,11 @@ import { AppState } from './AppState.js'
     background-position: center;
     font-size: 1.5em;
 }
+
+.buttonMoonImage {
+    background-image: url(./src/assets/img/moon_background.png);
+    background-size: cover;
+    background-position: center;
+  }
 
 </style>
