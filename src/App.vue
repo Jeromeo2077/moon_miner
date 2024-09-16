@@ -1,8 +1,9 @@
 // JS
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import { AppState } from './AppState.js'
 
+const cheese=ref(0)
 
 </script>
 
@@ -25,10 +26,26 @@ import { AppState } from './AppState.js'
     <section class="row m-3">
       <div class="col d-flex justify-content-center">
 
-        <button class="buttonMoonImage" style="width:13em;height:13em;"></button>
+        <button @click="cheese++" class="buttonMoonImage" style="width:13em;height:13em;"></button>
 
       </div>
     </section>
+
+    <footer class="container-fluid">
+    <section class="row">
+
+      <div class="col d-flex justify-content-center">
+
+        <div>
+          <span class="badge rounded-pill text-bg-warning cheeseTotal">Cheese Total: {{ cheese }} </span>
+          <span class="badge rounded-pill text-bg-warning cheeseClick">Cheese per click: </span>
+          <span class="badge rounded-pill text-bg-warning cheesePerTurn">Cheese per turn: </span>
+        </div>
+
+      </div>
+
+    </section>
+    </footer>
 
   </main>
 
