@@ -1,4 +1,4 @@
-import { reactive } from 'vue'
+import { reactive, ref } from 'vue'
 
 // NOTE AppState is a reactive object to contain app level data
 export const AppState = reactive({
@@ -7,4 +7,6 @@ export const AppState = reactive({
   /** @type {import('./models/Account.js').Account} user info from the database*/
   account: null
 })
+
+const cheese = ref(0)
 

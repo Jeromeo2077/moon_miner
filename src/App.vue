@@ -3,7 +3,9 @@
 import { computed, ref } from 'vue'
 import { AppState } from './AppState.js'
 
-const cheese=ref(0)
+function mineCheese(){
+  
+}
 
 </script>
 
@@ -26,7 +28,7 @@ const cheese=ref(0)
     <section class="row m-3">
       <div class="col d-flex justify-content-center">
 
-        <button @click="cheese++" class="buttonMoonImage" style="width:13em;height:13em;"></button>
+        <button @click="mineCheese()" class="buttonMoonImage" style="width:13em;height:13em;"></button>
 
       </div>
     </section>
@@ -37,9 +39,9 @@ const cheese=ref(0)
       <div class="col d-flex justify-content-center">
 
         <div>
-          <span class="badge rounded-pill text-bg-warning cheeseTotal">Cheese Total: {{ cheese }} </span>
-          <span class="badge rounded-pill text-bg-warning cheeseClick">Cheese per click: </span>
-          <span class="badge rounded-pill text-bg-warning cheesePerTurn">Cheese per turn: </span>
+          <span class="badge rounded-pill text-bg-warning cheeseTotal">Cheese Total: {{  }} </span>
+          <span class="badge rounded-pill text-bg-warning cheeseClick">Cheese per click: {{  }} </span>
+          <span class="badge rounded-pill text-bg-warning cheesePerTurn">Cheese per turn: {{  }} </span>
         </div>
 
       </div>
